@@ -2,27 +2,30 @@
   "name": "effect-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/server.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.4.1",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
-    "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6"
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^9.1.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@effect/data": "^0.13.6",
-    "@effect/io": "^0.31.3",
-    "@trpc/server": "^10.34.0",
-    "fastify": "^4.19.2",
-    "zod": "^3.21.4"
+    "@effect/opentelemetry": "^0.34.0",
+    "@effect/platform": "^0.52.0",
+    "@effect/platform-node": "^0.48.1",
+    "@effect/schema": "^0.66.12",
+    "@effect/sql-sqlite-node": "^0.1.15",
+    "@opentelemetry/sdk-metrics": "^1.24.0",
+    "@opentelemetry/sdk-trace-node": "^1.24.0",
+    "@opentelemetry/sdk-trace-web": "^1.24.0",
+    "effect": "^3.1.0",
+    "effect-http": "^0.64.2",
+    "effect-http-node": "^0.12.2",
+    "tsx": "^4.8.2"
   }
 }
